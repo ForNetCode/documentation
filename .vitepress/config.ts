@@ -6,7 +6,7 @@ export default defineConfig({
     title: 'ForNet',
     lang: 'en-US',
     description: '基于 WireGuard 协议组网快捷方案',
-    //base:'/fornet/',
+    base:'/documentation/',
     lastUpdated: true,
     cleanUrls: true,
     head: [
