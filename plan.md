@@ -6,10 +6,8 @@
 - [x] Windows desktop(blocked by signing windows Tun driver with enterprise certificate)
 
 ## Plan Feature(No Order)
-- [ ] SASS backend develop and deploy（For Easy Try）
 - [ ] punch hole
 - [ ] join multiple network
-- [ ] TCP protocol support
 - [ ] used socket connection(UDP)
 - [ ] Android App
 - [ ] iOS App

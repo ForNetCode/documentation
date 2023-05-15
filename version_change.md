@@ -1,7 +1,14 @@
 ## 版本变更说明
+prepare for users to try
+### V0.0.4
+- [ ] SASS backend develop and deploy（For Easy Try）
+- [ ] TCP protocol support
+#### Try Finish
+- [ ] windows command support(blocked by signing windows Tun driver with enterprise certificate)
 
+  
 ### V0.0.3
-此版本主为 Bug Fix 版本，解决稳定性问题，并开源
+Bug Fix version，prepare to release
 - [x] Docs
 - [x] License
 
