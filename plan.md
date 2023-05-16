@@ -11,6 +11,7 @@
 - [ ] used socket connection(UDP)
 - [ ] Android App
 - [ ] iOS App
+- [ ] aarch64 Linux/macOS/Docker support
 - [ ] Linux Desktop App
 - [ ] DNS(DNS Resolver)
 - [ ] WireGuard support
@@ -22,3 +23,4 @@
 - [ ] k8s deploy
 - [ ] OpenBSD/FreeBSD support
 - [ ] Windows Tun Driver performance improve（all in driver, only provide api to userspace）
+

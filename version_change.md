@@ -3,6 +3,7 @@ prepare for users to try
 ### V0.0.4
 - [ ] SASS backend develop and deploy（For Easy Try）
 - [ ] TCP protocol support
+- [ ] docker compose for quick start (For Easy Try)  
 #### Try Finish
 - [ ] windows command support(blocked by signing windows Tun driver with enterprise certificate)
 
