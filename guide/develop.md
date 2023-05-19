@@ -4,7 +4,7 @@ Download source code using Git:
 git clone --recursive {{$sourceUrl}}
 ```
 
-**由于开发时需要解决 前后端开发分离 问题**，需要使用 <a :href="$sourceUrl + '/command/docker/proxy'">Nginx 镜像</a> 来做 Backend、Web、Keycloak 流量统一转发。
+**由于开发时需要解决 前后端开发分离 问题**，需要使用 <a :href="${$sourceUrl}/command/docker/proxy">Nginx 镜像</a> 来做 Backend、Web、Keycloak 流量统一转发。
 ## Backend
 后台使用 Scala3 编写，包含 Servlet Web Server(Jetty) 和 gRPC Server。 
 ### 环境准备

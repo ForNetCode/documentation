@@ -15,10 +15,21 @@ Windows is blocked for tun driver code signature.
 
 ### Server
 The manager server is written by Scala, you can deploy the jar or docker image. It uses Postgres to store data. and uses [rmqtt](https://github.com/rmqtt/rmqtt) to interact with client.
+
+There is <a :href="${$sourceUrl}/command/docker-compose/simple/docker-compose.yml">docker-compose.yml</a> for quick start, you can ship it with:
+```shell
+# must be in the directory
+# it needs config files of backend and rmqtt
+cd /command/docker-compose/simple
+docker-compose up
+```
 #### Postgres
 ```shell
 # If platform is Mac/Windows, change --network=host to -p 5432:5432
-docker run -d  --name postgres --network=host -e POSTGRES_PASSWORD=tnet_db_password -v ${local_machine/pg/path}:/var/lib/postgresql/data postgres:14
+docker run -d  --name postgres --network=host \
+-e POSTGRES_PASSWORD=tnet_db_password \
+-v ${local_machine/pg/path}:/var/lib/postgresql/data\
+postgres:14
 
 # --psql: create database tnet_db in PG
 docker exec -it postgres sh
@@ -32,8 +43,13 @@ Here is an example of rmqtt <a :href="$sourceUrl + '/command/docker/mqtt'">confi
 More details about RMQTT can be found [here](https://github.com/rmqtt/rmqtt).
 ```shell
 cd /command/docker/mqtt
-# RMQTT will use port 1883(mqtt) 6060(http api) 5363(grpc)
-docker run -d --name mqtt --network=host -v $(pwd)/log:/var/log/rmqtt -v $(pwd)/config/rmqtt.toml:/app/rmqtt/rmqtt.toml -v $(pwd)/config/plugin:/app/rmqtt/plugin rmqtt/rmqtt:latest
+# RMQTT will use port:
+# 1883(mqtt) 6060(http api) 5363(grpc)
+docker run -d --name mqtt --network=host\
+ -v $(pwd)/log:/var/log/rmqtt\
+ -v $(pwd)/config/rmqtt.toml:/app/rmqtt/rmqtt.toml\
+ -v $(pwd)/config/plugin:/app/rmqtt/plugin\
+ rmqtt/rmqtt:latest
 ```
 
 #### Config File
@@ -44,7 +60,12 @@ More details about config can be found [here](config.md).
 
 ```shell
 # run server with database init
-docker run -it -d -p 8080:8080 -p 9000:9000 -v ${local_machine/applcation.conf+logback.xml/path}:/config  --name=fornet-backend fornetcode/fornet-backend:latest
+docker run -it -d\
+-p 8080:8080 -p 9000:9000\
+-v ${local_machine/applcation.conf+logback.xml/path}:/config\
+--name=fornet-backend\
+fornetcode/fornet-backend:latest
+
 docker logs -f --tail 50 fornet-backend
 ```
 
@@ -65,7 +86,12 @@ fornet-cli join xxx
 You can also use docker in Linux.
 ```shell
 # export config to host, otherwise private.key will miss if image delete
-docker run -it --name=fornet --cap-add=NET_ADMIN --network=host --device=/dev/net/tun -v ${config_path}:/config fornet:0.0.3
+docker run -it --name=fornet\
+--cap-add=NET_ADMIN\
+--network=host\
+--device=/dev/net/tun\
+-v ${config_path}:/config\
+fornet:0.0.3
 # join  network
 docker exec -it fornet fornet-cli join xxx
 ```

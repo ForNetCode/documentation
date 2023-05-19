@@ -130,4 +130,4 @@ RMQTT will call backend server http api:
 3. /mqtt/webhook, rmqtt webhook(do nothing)
 4. /mqtt/superuser, rmqtt super user auth (do nothing, always return false)
 
-Backend server will call RMQTT http restful api. 
+Backend server will call RMQTT http restful api.
