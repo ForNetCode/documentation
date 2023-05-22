@@ -6,12 +6,12 @@
 - [x] Windows desktop(blocked by signing windows Tun driver with enterprise certificate)
 
 ## Plan Feature(No Order)
-- [ ] punch hole
+- [ ] punch hole(p2p)
 - [ ] join multiple network
-- [ ] used socket connection(UDP)
+- [ ] aarch64 Linux/macOS/Docker support
 - [ ] Android App
 - [ ] iOS App
-- [ ] aarch64 Linux/macOS/Docker support
+- [ ] used socket connection(UDP)
 - [ ] Linux Desktop App
 - [ ] DNS(DNS Resolver)
 - [ ] WireGuard support
