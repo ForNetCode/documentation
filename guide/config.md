@@ -26,7 +26,8 @@ server {
   }
   # hashId to confuse number id
   hashId: "fornet dev salt,you should change it"
-  
+  # enable saas mode, default is false
+  # saas: false,
 }
 # postgres config
 database {
@@ -52,8 +53,10 @@ auth {
   #  realm: "fornet",
   #  authServerUrl: "http://keycloak-dev.fornet.com",
   #  frontClientId : "fornet",
-  #  // users who has the role `admin` can access admin backend web
-  #  role: "admin",
+  #  # the user who has admin role can login in admin web, if undefined, anyone in the keycloak of realm can login
+  #  adminRole: "admin",
+  #  # the user who has client role can login in client, if undefined, anyone in the keycloak of realm can login
+  #  clientRole: "client",
   #}
   
   # simple auth, you should not use it in production environment

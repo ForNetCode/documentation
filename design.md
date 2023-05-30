@@ -42,6 +42,14 @@ Server: validate(public key,  plain text)
 
 当客户端接收的配置变更版本与服务器端推送的不一致时，客户端可通过gRPC拉取最新配置。
 
+## TCP
+TCP 协议和 UDP 协议不同，要区分好 server/client 关系，可按照有无公网IP、IP 大小值 来简单做。
+
+A 有公网IP，B无公网IP： A是Server，B做Client
+A、B都无公网IP： A与B做 Client，去连接Relay
+A、B都有公网IP： 谁 private IP值大，谁做 Server，另外一个做 Client， 若是不做判定，靠心跳来建立连接，有可能产生相互死锁。
+
+
 ## 网络拓扑
 
 网络拓扑的设定方式：
