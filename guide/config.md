@@ -48,22 +48,16 @@ mqtt {
 
 # auth config for backend
 auth {
-  # ref from keycloak config, you can download it from keycloak/realm/client  
-  #keycloak {  
+   # ref from keycloak config, you can download it from keycloak/realm/client
+  #keycloak {
   #  realm: "fornet",
-  #  authServerUrl: "http://keycloak-dev.fornet.com",
+  #  authServerUrl: "http://keycloak-dev.fornetcode.com",
   #  frontClientId : "fornet",
   #  # the user who has admin role can login in admin web, if undefined, anyone in the keycloak of realm can login
   #  adminRole: "admin",
   #  # the user who has client role can login in client, if undefined, anyone in the keycloak of realm can login
   #  clientRole: "client",
   #}
-  
-  # simple auth, you should not use it in production environment
-  simple {
-    token: "adminToken"
-    userId: "admin"
-  }
 }
 
 ```
