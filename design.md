@@ -48,7 +48,7 @@ TCP 协议和 UDP 协议不同，要区分好 server/client 关系，可按照�
 A 有公网IP，B无公网IP： A是Server，B做Client
 A、B都无公网IP： A与B做 Client，去连接Relay
 A、B都有公网IP： 谁 private IP值大，谁做 Server，另外一个做 Client， 若是不做判定，靠心跳来建立连接，有可能产生相互死锁。
-
+为了后续 Relay 好做些，即使没有公网IP，TCP server 也开着，方面 IP 的随时增减。
 
 ## 网络拓扑
 
