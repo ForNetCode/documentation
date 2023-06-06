@@ -106,3 +106,18 @@ flutter_rust_bridge_codegen --rust-input ..\client\lib\src\flutter_api.rs --dart
 # this is for others environment
 flutter_rust_bridge_codegen --rust-input ../client/lib/src/flutter_api.rs --dart-output ./lib/bridge_generated.dart --dart-decl-output ./lib/bridge_definitions.dart -e macos/Runner
 ```
+
+
+## Release Version Check
+## ChangeVersion
+- backend(build.sbt)
+- client(cargo.toml)
+- admin-web(package.json)
+## Distribution
+Run Github Action:
+- Client binary, docker image
+- Backend jar, docker image
+
+## Documentation
+- change log
+- Github Action(release to GitPage)
