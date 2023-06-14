@@ -10,7 +10,7 @@ server {
     port: 8080
     endpoint: "http://dev.localhost"
     # If you serve admin-web static web pages in backend, should set the path, otherwise remove it.    
-    staticWeb: "src/main/webapp"
+    staticWeb: "src/main/webapp"ada
   }
   # interact with client, highly recommand to use https in production.
   grpc {
@@ -54,8 +54,10 @@ auth {
   #  authServerUrl: "http://keycloak-dev.fornetcode.com",
   #  frontClientId : "fornet",
   #  # the user who has admin role can login in admin web, if undefined, anyone in the keycloak of realm can login
+  #  # when server.saas enabled, this is useless
   #  adminRole: "admin",
   #  # the user who has client role can login in client, if undefined, anyone in the keycloak of realm can login
+  #  # when server.saas enabled, this is useless
   #  clientRole: "client",
   #}
 }
@@ -123,8 +125,7 @@ The interaction between ForNet server with RQMTT is:
 
 RMQTT will call backend server http api:
 1. /mqtt/auth, auth callback(check client if validate)
-2. /mqtt/acl, client acl(do nothing, always return true)
-3. /mqtt/webhook, rmqtt webhook(do nothing)
-4. /mqtt/superuser, rmqtt super user auth (do nothing, always return false)
+2. /mqtt/acl, client acl(ensure only server can publish message)
+3. /mqtt/webhook, rmqtt webhook(when client subscribe client/$ success, publish config message)
 
 Backend server will call RMQTT http restful api.

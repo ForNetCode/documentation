@@ -10,10 +10,11 @@ Just want to try it out? Skip to the [Quick Start](./quick-start).
 
 ## Use Cases
 - **Home Lab**
-[WIP]Easy try, Device can access each other by P2P or Relay, and you can configure all your device in one web page.
+Easy try, Device can access each other by P2P[WIP] or Relay, and you can configure all your device in one web page.
 - **Enterprise Secure Network**
 ForNet integrated with Keycloak, IT would easily manage the employee permissions to access company private network.
-
+- **SAAS Secure Network**
+ForNet provide simple saas secure network platform with keycloak, It now used for easy try of ForNet.
 
 ## What about WireGuard?
 ForNet is based on [BoringTun](https://github.com/cloudflare/boringtun) which is the Rust implementation of WireGuard. We very appreciate their efforts to create such brilliant project.

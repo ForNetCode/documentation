@@ -1,10 +1,9 @@
 ## 版本变更说明
 prepare for users to try
 ### V0.0.4
-- [ ] SASS backend develop and deploy（For Easy Try）
-- [ ] TCP protocol support
-- [ ] docker compose for quick start (For Easy Try)  
-
+- [x] SASS backend develop and deploy（For Easy Try）
+- [x] TCP protocol support
+- [x] docker compose for quick start (For Easy Try)  
   
 ### V0.0.3
 Bug Fix version，prepare to release
