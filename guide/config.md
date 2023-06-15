@@ -10,7 +10,7 @@ server {
     port: 8080
     endpoint: "http://dev.localhost"
     # If you serve admin-web static web pages in backend, should set the path, otherwise remove it.    
-    staticWeb: "src/main/webapp"ada
+    staticWeb: "src/main/webapp"
   }
   # interact with client, highly recommand to use https in production.
   grpc {
