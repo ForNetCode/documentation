@@ -4,13 +4,14 @@
 stable it, and then wait users feedback
 - [ ] make client more stable(handle tcp connection state, destory resource when forbid)
 - [ ] windows support TCP
-- [x] windows command support
+- [ ] windows command support
+- [ ] [backend] move common code to web-sugar
+- [ ] [client tun]move to windows-simple-tun
 
 
 ## Plan Feature(No Order)
 - [ ] punch hole(p2p)
 - [ ] join multiple network
-- [ ] aarch64 Linux/macOS/Docker support(GitHub Actions)
 - [ ] Android App
 - [ ] iOS App
 - [ ] used socket connection(UDP)
@@ -23,6 +24,7 @@ stable it, and then wait users feedback
 - [ ] Ingress LoadBalance
 - [ ] k8s deploy
 - [ ] OpenBSD/FreeBSD support
+- [ ] Windows arm64 support
 - [ ] Windows Tun Driver performance improve（all in driver, only provide api to userspace）
 
 ## Blocked Feature
