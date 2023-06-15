@@ -1,6 +1,6 @@
 # Roadmap
 
-# 0.1.0
+# 0.0.5
 stable it, and then wait users feedback
 - [ ] make client more stable(handle tcp connection state, destory resource when forbid)
 - [ ] windows support TCP

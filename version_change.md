@@ -5,6 +5,7 @@ prepare for users to try
 - [x] TCP protocol support
 - [x] docker compose for quick start (For Easy Try)
 - [x] fix: MQTT relative bugs
+- [x] cicd: add amd64 macOS/Linux Client binary artifact
   
 ### V0.0.3(drop for error usage of MQTT)
 Bug Fix version，prepare to release
