@@ -44,8 +44,8 @@ sbt universal:packageBin
 Docker 镜像(包含Web端, 请安装好 Node.js)打包脚本： `command/docker/backend/docker_build.sh`
 ```shell
 cd command/docker/backend
-version=0.0.3
-# version: 0.0.3, 版本要和 backend/build.sbt 里的版本保持一致。
+version=$latest
+# version 要和 backend/build.sbt 里的版本保持一致。
 ./docker_build.sh $version
 
 # run server

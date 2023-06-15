@@ -3,9 +3,10 @@ prepare for users to try
 ### V0.0.4
 - [x] SASS backend develop and deploy（For Easy Try）
 - [x] TCP protocol support
-- [x] docker compose for quick start (For Easy Try)  
+- [x] docker compose for quick start (For Easy Try)
+- [x] fix: MQTT relative bugs
   
-### V0.0.3
+### V0.0.3(drop for error usage of MQTT)
 Bug Fix version，prepare to release
 - [x] Docs
 - [x] License
