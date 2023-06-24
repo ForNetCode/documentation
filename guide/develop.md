@@ -111,7 +111,7 @@ flutter_rust_bridge_codegen --rust-input ../client/lib/src/flutter_api.rs --dart
 ## Release Version Check
 ## ChangeVersion
 - backend(build.sbt)
-- client(cargo.toml)
+- client(cargo.toml, cargo-lock.toml)
 - admin-web(package.json)
 ## Distribution
 Run Github Action:
