@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as t,N as r}from"./chunks/framework.f628b7a4.js";const k=JSON.parse('{"title":"设计思路","description":"","frontmatter":{},"headers":[],"relativePath":"design.md","lastUpdated":1683818715000}'),i={name:"design.md"},o=r("",38),n=[o];function l(d,s,p,h,c,u){return t(),a("div",null,n)}const f=e(i,[["render",l]]);export{k as __pageData,f as default};

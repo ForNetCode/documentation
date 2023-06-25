@@ -1,1 +1,0 @@
-import{_ as a,c as s,o as n,N as e}from"./chunks/framework.f628b7a4.js";const A=JSON.parse('{"title":"WireGuard","description":"","frontmatter":{},"headers":[],"relativePath":"knowlegdge.md","lastUpdated":1683818715000}'),l={name:"knowlegdge.md"},p=e("",38),o=[p];function r(t,c,i,d,y,D){return n(),s("div",null,o)}const u=a(l,[["render",r]]);export{A as __pageData,u as default};
