@@ -1,6 +1,6 @@
-## 版本变更说明
-prepare for users to try
+## Changelog
 ### V0.0.4
+prepare for users to try
 - [x] feat: SASS backend develop and deploy（For Easy Try）
 - [x] feat: docker compose for quick start (For Easy Try)
 - [x] feat: TCP protocol support

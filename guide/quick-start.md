@@ -16,7 +16,7 @@ Windows is blocked for tun driver code signature.
 ### Server
 The manager server is written by Scala, you can deploy the jar or docker image. It uses Postgres to store data. and uses [rmqtt](https://github.com/rmqtt/rmqtt) to interact with client.
 
-There is <a :href="${$sourceUrl}/command/docker-compose/simple/docker-compose.yml">docker-compose.yml</a> for quick start, you can ship it with:
+There is <a :href="`${$sourceUrl}/command/docker-compose/simple/docker-compose.yml`">docker-compose.yml</a> for quick start, you can ship it with:
 ```shell
 # must be in the directory
 # it needs config files of backend and rmqtt

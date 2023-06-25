@@ -10,7 +10,7 @@ ForNet keycloak auth config now is simple. every user who are in the realm you l
 ## Keycloak Config
 ForNet use device code auth with Keycloak. Below is an example settings of keycloak.
 We assume that you have bring keycloak up, and prepare to config fornet-bakcend `application.conf` as below:
-```honcon
+```hocon
 auth.keycloak {  
     realm: "fornet",
     authServerUrl: "http://keycloak-dev.fornet.com",
