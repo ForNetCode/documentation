@@ -1,7 +1,17 @@
 ## 版本变更说明
-
-### V0.0.3
-此版本主为 Bug Fix 版本，解决稳定性问题，并开源
+prepare for users to try
+### V0.0.4
+- [x] feat: SASS backend develop and deploy（For Easy Try）
+- [x] feat: docker compose for quick start (For Easy Try)
+- [x] feat: TCP protocol support
+- [x] fix: MQTT relative bugs
+- [x] fix: make client more stable(handle tcp connection state, destory resource when forbid)
+- [x] chore: [backend] move common code to web-sugar
+- [x] chore: [client tun] move to windows-simple-tun
+- [x] cicd: add amd64 Linux client docker artifact
+  
+### V0.0.3(drop for error usage of MQTT)
+Bug Fix version，prepare to release
 - [x] Docs
 - [x] License
 

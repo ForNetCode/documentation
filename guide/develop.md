@@ -4,7 +4,7 @@ Download source code using Git:
 git clone --recursive {{$sourceUrl}}
 ```
 
-**由于开发时需要解决 前后端开发分离 问题**，需要使用 <a :href="$sourceUrl + '/command/docker/proxy'">Nginx 镜像</a> 来做 Backend、Web、Keycloak 流量统一转发。
+**由于开发时需要解决 前后端开发分离 问题**，需要使用 <a :href="${$sourceUrl}/command/docker/proxy">Nginx 镜像</a> 来做 Backend、Web、Keycloak 流量统一转发。
 ## Backend
 后台使用 Scala3 编写，包含 Servlet Web Server(Jetty) 和 gRPC Server。 
 ### 环境准备
@@ -44,8 +44,8 @@ sbt universal:packageBin
 Docker 镜像(包含Web端, 请安装好 Node.js)打包脚本： `command/docker/backend/docker_build.sh`
 ```shell
 cd command/docker/backend
-version=0.0.3
-# version: 0.0.3, 版本要和 backend/build.sbt 里的版本保持一致。
+version=$latest
+# version 要和 backend/build.sbt 里的版本保持一致。
 ./docker_build.sh $version
 
 # run server
@@ -106,3 +106,18 @@ flutter_rust_bridge_codegen --rust-input ..\client\lib\src\flutter_api.rs --dart
 # this is for others environment
 flutter_rust_bridge_codegen --rust-input ../client/lib/src/flutter_api.rs --dart-output ./lib/bridge_generated.dart --dart-decl-output ./lib/bridge_definitions.dart -e macos/Runner
 ```
+
+
+## Release Version Check
+## ChangeVersion
+- backend(build.sbt)
+- client(cargo.toml, cargo-lock.toml)
+- admin-web(package.json)
+## Distribution
+Run Github Action:
+- Client binary, docker image
+- Backend jar, docker image
+
+## Documentation
+- change log
+- Github Action(release to GitPage)

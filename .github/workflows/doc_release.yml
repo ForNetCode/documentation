@@ -1,11 +1,9 @@
 name: doc release
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        required: true
-        description: "version to release"
+  push:
+    branches:
+      - main
 jobs:
   release-doc:
     runs-on: ubuntu-latest

@@ -26,7 +26,8 @@ server {
   }
   # hashId to confuse number id
   hashId: "fornet dev salt,you should change it"
-  
+  # enable saas mode, default is false
+  # saas: false,
 }
 # postgres config
 database {
@@ -47,20 +48,18 @@ mqtt {
 
 # auth config for backend
 auth {
-  # ref from keycloak config, you can download it from keycloak/realm/client  
-  #keycloak {  
+   # ref from keycloak config, you can download it from keycloak/realm/client
+  #keycloak {
   #  realm: "fornet",
-  #  authServerUrl: "http://keycloak-dev.fornet.com",
+  #  authServerUrl: "http://keycloak-dev.fornetcode.com",
   #  frontClientId : "fornet",
-  #  // users who has the role `admin` can access admin backend web
-  #  role: "admin",
+  #  # the user who has admin role can login in admin web, if undefined, anyone in the keycloak of realm can login
+  #  # when server.saas enabled, this is useless
+  #  adminRole: "admin",
+  #  # the user who has client role can login in client, if undefined, anyone in the keycloak of realm can login
+  #  # when server.saas enabled, this is useless
+  #  clientRole: "client",
   #}
-  
-  # simple auth, you should not use it in production environment
-  simple {
-    token: "adminToken"
-    userId: "admin"
-  }
 }
 
 ```
@@ -126,8 +125,7 @@ The interaction between ForNet server with RQMTT is:
 
 RMQTT will call backend server http api:
 1. /mqtt/auth, auth callback(check client if validate)
-2. /mqtt/acl, client acl(do nothing, always return true)
-3. /mqtt/webhook, rmqtt webhook(do nothing)
-4. /mqtt/superuser, rmqtt super user auth (do nothing, always return false)
+2. /mqtt/acl, client acl(ensure only server can publish message)
+3. /mqtt/webhook, rmqtt webhook(when client subscribe client/$ success, publish config message)
 
-Backend server will call RMQTT http restful api. 
+Backend server will call RMQTT http restful api.
