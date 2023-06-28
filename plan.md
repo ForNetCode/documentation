@@ -1,9 +1,5 @@
 # Roadmap
 
-# 0.0.5
-stable it, and then wait users feedback
-- [ ] windows support TCP
-- [ ] windows command support
 
 
 ## Plan Feature(No Order)

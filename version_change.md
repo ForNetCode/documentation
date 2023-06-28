@@ -1,4 +1,12 @@
 ## Changelog
+
+# 0.1.0
+stable it, and then wait users feedback
+- [ ] windows support TCP
+- [ ] windows command support
+- [x] feat/cicd: move mqtt client to mqrstt
+- [x] chore: [admin-web] update dependencies
+
 ### V0.0.4
 prepare for users to try
 - [x] feat: SASS backend develop and deploy（For Easy Try）
