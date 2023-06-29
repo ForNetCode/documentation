@@ -19,7 +19,7 @@ export default defineConfig({
             '/guide/': sidebarGuide(),
         },
         footer: {
-            message: 'Released under the BSL 1.1 License',
+            message: 'Documentation released under CC 4.0 License',
             copyright: 'Copyright © 2023-present Timzaak'
         }
     },
