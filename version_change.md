@@ -4,6 +4,7 @@
 stable it, and then wait users feedback
 - [ ] windows support TCP
 - [ ] windows command support
+- [ ] feat: support join multiple network
 - [x] feat/cicd: move mqtt client to mqrstt
 - [x] chore: [admin-web] update dependencies
 

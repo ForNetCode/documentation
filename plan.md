@@ -1,7 +1,5 @@
 # Roadmap
 
-
-
 ## Plan Feature(No Order)
 - [ ] punch hole(p2p)
 - [ ] join multiple network
@@ -19,6 +17,7 @@
 - [ ] OpenBSD/FreeBSD support
 - [ ] Windows arm64 support
 - [ ] Windows Tun Driver performance improve（all in driver, only provide api to userspace）
+- [ ] run without managerment
 
 ## Blocked Feature
 - [x] MacOS desktop(release when user really need it)
