@@ -2,7 +2,7 @@
 
 ## Plan Feature(No Order)
 - [ ] punch hole(p2p)
-- [ ] join multiple network
+- [ ] error info report to server
 - [ ] Android App
 - [ ] iOS App
 - [ ] used socket connection(UDP)
