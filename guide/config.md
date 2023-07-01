@@ -152,21 +152,16 @@ There are there files in the config directory.
 {
   "server": "http://dev.fornetcode.com:9000",
   "device_id": "xxx",
-  "info": [
-    {
-      "network_id": "L9wJy",
-      "mqtt_url": "mqtt://mqtt-dev.fornetcode.com:1883",      
-    }
+  "tun_info": [
+    {"name": "", "network_id": ""}
   ]
 }
 ```
 
 > `server` is the grpc server which to provide auth API.
 >
-> `info.network_id` the network ID which the device has joined.
->
-> `info.mqtt_url` the mqtt server which receive device config and peer nodes change message.
->
-> `info.device_id` the device ID which is a short ID of public key.
+> `device_id` the device ID which is a short ID of public key.
+> 
+> `tun_info` the tun name of network which device joined.
 
 The config files is managed by fornet client, You should not change it.
