@@ -152,6 +152,7 @@ There are there files in the config directory.
 {
   "server": "http://dev.fornetcode.com:9000",
   "device_id": "xxx",
+  "mqtt_url": "",
   "tun_info": [
     {"name": "", "network_id": ""}
   ]
