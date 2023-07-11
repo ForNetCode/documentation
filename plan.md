@@ -17,7 +17,7 @@
 - [ ] OpenBSD/FreeBSD support
 - [ ] Windows arm64 support
 - [ ] Windows Tun Driver performance improve（all in driver, only provide api to userspace）
-- [ ] run without managerment
+- [ ] run without manager sc-manager, read config from local file
 
 ## Blocked Feature
 - [x] MacOS desktop(release when user really need it)
