@@ -1,9 +1,13 @@
 # Roadmap
 
+
+## Doing Feature
+- [ ] Android App
+
 ## Plan Feature(No Order)
+- [ ] admin web tutorial
 - [ ] punch hole(p2p)
 - [ ] error info report to server
-- [ ] Android App
 - [ ] iOS App
 - [ ] used socket connection(UDP)
 - [ ] Linux Desktop App
@@ -16,6 +20,7 @@
 - [ ] k8s deploy
 - [ ] OpenBSD/FreeBSD support
 - [ ] Windows arm64 support
+- [ ] replace wireguard protocol to http3 ?
 - [ ] Windows Tun Driver performance improve（all in driver, only provide api to userspace）
 - [ ] run without manager sc-manager, read config from local file
 

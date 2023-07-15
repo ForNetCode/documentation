@@ -57,6 +57,9 @@ function sidebarGuide() {
                 text: 'Quick Start',
                 link: '/guide/quick-start',
             }, {
+                text: 'admin manager tutorial',
+                link: '/guide/admin_web_tutorial'
+            }, {
                 text: 'Keycloak',
                 link: '/guide/keycloak',
             }],
