@@ -100,9 +100,9 @@ App端使用 [Flutter](https://flutter.dev/) 来做跨平台 UI层面的开发�
 cd app
 
 # this is for Windows environment
-flutter_rust_bridge_codegen --rust-input ..\client\lib\src\flutter_api.rs --dart-output .\lib\bridge_generated.dart --dart-decl-output .\lib\bridge_definitions.dart -e macos\Runner
+flutter_rust_bridge_codegen --rust-input ..\client\lib\src\flutter_api.rs --dart-output .\lib\native\bridge_generated.dart --dart-decl-output .\lib\native\bridge_definitions.dart -e macos\Runner
 # this is for others environment
-flutter_rust_bridge_codegen --rust-input ../client/lib/src/flutter_api.rs --dart-output ./lib/bridge_generated.dart --dart-decl-output ./lib/bridge_definitions.dart -e macos/Runner
+flutter_rust_bridge_codegen --rust-input ../client/lib/src/flutter_api.rs --dart-output ./lib/native/bridge_generated.dart --dart-decl-output ./lib/native/bridge_definitions.dart -e macos/Runner
 ```
 
 
