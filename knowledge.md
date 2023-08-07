@@ -74,6 +74,8 @@ Endpoint:
 [Android VPN](https://developer.android.com/guide/topics/connectivity/vpn)
 # Rust And App
 [flutter_rust_bridge](https://cjycode.com/flutter_rust_bridge/)
+Android bindService/unbindService
+FileDescriptor fileDescriptor
 
 
 
