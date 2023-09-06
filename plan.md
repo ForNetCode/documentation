@@ -9,8 +9,6 @@
 - [ ] punch hole(p2p)
 - [ ] error info report to server
 - [ ] iOS App
-- [ ] used socket connection(UDP)
-- [ ] Linux Desktop App
 - [ ] DNS(DNS Resolver)
 - [ ] WireGuard Relay support
 - [ ] mDNS support for Lan
@@ -27,3 +25,4 @@
 ## Blocked Feature
 - [x] MacOS desktop(release when user really need it)
 - [x] Windows desktop(release when user really need it)
+- [ ] Linux desktop

@@ -2,9 +2,9 @@
 
 # 0.1.0
 stable it, and then wait users feedback
-- [ ] windows support TCP
+- [x] windows support TCP
 - [ ] windows command support
-- [ ] feat: support join multiple network
+- [x] refact: refactor client code to prepare to support join multiple network and Android Platform
 - [x] feat/cicd: move mqtt client to mqrstt
 - [x] chore: [admin-web] update dependencies
 
