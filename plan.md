@@ -18,7 +18,6 @@
 - [ ] k8s deploy
 - [ ] OpenBSD/FreeBSD support
 - [ ] Windows arm64 support
-- [ ] replace wireguard protocol to http3 ?
 - [ ] Windows Tun Driver performance improve（all in driver, only provide api to userspace）
 - [ ] run without manager sc-manager, read config from local file
 
@@ -26,3 +25,6 @@
 - [x] MacOS desktop(release when user really need it)
 - [x] Windows desktop(release when user really need it)
 - [ ] Linux desktop
+
+## Thinking Feature
+replace wireguard to webrtc, then P2P is more easy to be done.
