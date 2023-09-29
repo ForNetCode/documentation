@@ -1,18 +1,14 @@
 # Roadmap
 
-# 0.0.5
-stable it, and then wait users feedback
-- [ ] windows support TCP
-- [ ] windows command support
 
+## Doing Feature
+- [ ] Android App
 
 ## Plan Feature(No Order)
+- [ ] admin web tutorial
 - [ ] punch hole(p2p)
-- [ ] join multiple network
-- [ ] Android App
+- [ ] error info report to server
 - [ ] iOS App
-- [ ] used socket connection(UDP)
-- [ ] Linux Desktop App
 - [ ] DNS(DNS Resolver)
 - [ ] WireGuard Relay support
 - [ ] mDNS support for Lan
@@ -23,7 +19,12 @@ stable it, and then wait users feedback
 - [ ] OpenBSD/FreeBSD support
 - [ ] Windows arm64 support
 - [ ] Windows Tun Driver performance improve（all in driver, only provide api to userspace）
+- [ ] run without manager sc-manager, read config from local file
 
 ## Blocked Feature
 - [x] MacOS desktop(release when user really need it)
 - [x] Windows desktop(release when user really need it)
+- [ ] Linux desktop
+
+## Thinking Feature
+replace wireguard to webrtc, then P2P is more easy to be done.

@@ -1,4 +1,13 @@
 ## Changelog
+
+# 0.1.0
+stable it, and then wait users feedback
+- [x] windows support TCP
+- [ ] windows command support
+- [x] refact: refactor client code to prepare to support join multiple network and Android Platform
+- [x] feat/cicd: move mqtt client to mqrstt
+- [x] chore: [admin-web] update dependencies
+
 ### V0.0.4
 prepare for users to try
 - [x] feat: SASS backend develop and deploy（For Easy Try）

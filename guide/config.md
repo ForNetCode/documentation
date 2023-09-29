@@ -129,3 +129,40 @@ RMQTT will call backend server http api:
 3. /mqtt/webhook, rmqtt webhook(when client subscribe client/$ success, publish config message)
 
 Backend server will call RMQTT http restful api.
+
+## Client
+
+Client would store config files at different directory for differnet OS. The default path is:
+|OS|PATH|
+|:---:|:---------------:|
+|macOS| ~/.fornet|
+|Linux|/etc/fornet|
+
+You can replace the default path by setting environment variable `FORNET_CONFIG` or run with `fornet --config=$CUSTOMISE_PATH`.
+
+There are there files in the config directory.
+
+`id_curve25519.key` the private key generated on host for encrypted communication.
+
+`id_curve25519.pub` the public key of `id_curve25519.key` which is the device ID.
+
+`config.json` contains the network information which the device joined, for example:
+
+```json
+{
+  "server": "http://dev.fornetcode.com:9000",
+  "device_id": "xxx",
+  "mqtt_url": "",
+  "tun_info": [
+    {"name": "", "network_id": ""}
+  ]
+}
+```
+
+> `server` is the grpc server which to provide auth API.
+>
+> `device_id` the device ID which is a short ID of public key.
+> 
+> `tun_info` the tun name of network which device joined.
+
+The config files is managed by fornet client, You should not change it.

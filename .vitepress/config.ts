@@ -6,7 +6,7 @@ export default defineConfig({
     title: 'ForNet',
     lang: 'en-US',
     description: '基于 WireGuard 协议组网快捷方案',
-    base:'/documentation/',
+    // base:'/documentation/',
     lastUpdated: true,
     cleanUrls: true,
     head: [
@@ -19,7 +19,7 @@ export default defineConfig({
             '/guide/': sidebarGuide(),
         },
         footer: {
-            message: 'Released under the BSL 1.1 License',
+            message: 'Documentation released under CC 4.0 License',
             copyright: 'Copyright © 2023-present Timzaak'
         }
     },
@@ -56,6 +56,9 @@ function sidebarGuide() {
             }, {
                 text: 'Quick Start',
                 link: '/guide/quick-start',
+            }, {
+                text: 'admin manager tutorial',
+                link: '/guide/admin_web_tutorial'
             }, {
                 text: 'Keycloak',
                 link: '/guide/keycloak',

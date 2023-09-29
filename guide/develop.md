@@ -75,8 +75,6 @@ npm run build:prod
 ### 环境准备
 1. [Rust 安装](https://www.rust-lang.org/tools/install), version:1.63.0+
 2. [protobuf compiler安装](https://github.com/hyperium/tonic#dependencies), [windows 版本安装](https://zhuanlan.zhihu.com/p/462221148)，开发 Rust 的 gRPC 需要。（PS: Ubuntu 的 protobuf 版本过低（要求版本>=3.16），建议去 protobuf github 下载最新版本二进制）
-3. [cmake](https://cmake.org/) Paho MQTT client required
-4. [OpenSSL](https://www.openssl.org/) Paho MQTT client required 
 
 ### 编译与开发
 推荐使用 Clion 开发。
@@ -102,9 +100,9 @@ App端使用 [Flutter](https://flutter.dev/) 来做跨平台 UI层面的开发�
 cd app
 
 # this is for Windows environment
-flutter_rust_bridge_codegen --rust-input ..\client\lib\src\flutter_api.rs --dart-output .\lib\bridge_generated.dart --dart-decl-output .\lib\bridge_definitions.dart -e macos\Runner
+flutter_rust_bridge_codegen --rust-input ..\client\lib\src\flutter_api.rs --dart-output .\lib\native\bridge_generated.dart --dart-decl-output .\lib\native\bridge_definitions.dart -e macos\Runner
 # this is for others environment
-flutter_rust_bridge_codegen --rust-input ../client/lib/src/flutter_api.rs --dart-output ./lib/bridge_generated.dart --dart-decl-output ./lib/bridge_definitions.dart -e macos/Runner
+flutter_rust_bridge_codegen --rust-input ../client/lib/src/flutter_api.rs --dart-output ./lib/native/bridge_generated.dart --dart-decl-output ./lib/native/bridge_definitions.dart -e macos/Runner
 ```
 
 
