@@ -48,17 +48,22 @@ mqtt {
 
 # auth config for backend
 auth {
-   # ref from keycloak config, you can download it from keycloak/realm/client
+  # ref from keycloak config, you can download it from keycloak/realm/client
   #keycloak {
   #  realm: "fornet",
   #  authServerUrl: "http://keycloak-dev.fornetcode.com",
-  #  frontClientId : "fornet",
+  #  frontClientId : "fornet",  
   #  # the user who has admin role can login in admin web, if undefined, anyone in the keycloak of realm can login
   #  # when server.saas enabled, this is useless
   #  adminRole: "admin",
   #  # the user who has client role can login in client, if undefined, anyone in the keycloak of realm can login
   #  # when server.saas enabled, this is useless
   #  clientRole: "client",
+  #}
+  # simple auth, the admin web can access with auth.simple.token,  auth.simple.userId is required for compatible with keycloak
+  #simple {
+  #  token: "adminToken"
+  #  userId: "admin"
   #}
 }
 
@@ -115,7 +120,7 @@ This is an example log config, you can customize with your own need, If you use 
 
 ## RMQTT
 There's more details about RMQTT at its [git repo](https://github.com/rmqtt/rmqtt).
-There's 4 plugin config files should be set. You can get an example config of RMQTT <a :href="$sourceUrl + '/command/docker/mqtt/config/plugin'"></a>
+There's 4 plugin config files should be set. You can get an <a :href="$sourceUrl + '/tree/main/command/docker/mqtt/config/plugin'">example config of RMQTT </a>
 1. rmqtt-auth-http.yml
 2. rmqtt-http-api.yml
 3. rmqtt-web-hook.yml
@@ -137,6 +142,7 @@ Client would store config files at different directory for differnet OS. The def
 |:---:|:---------------:|
 |macOS| ~/.fornet|
 |Linux|/etc/fornet|
+|Windows||
 
 You can replace the default path by setting environment variable `FORNET_CONFIG` or run with `fornet --config=$CUSTOMISE_PATH`.
 
@@ -151,18 +157,18 @@ There are there files in the config directory.
 ```json
 {
   "server": "http://dev.fornetcode.com:9000",
-  "device_id": "xxx",
-  "mqtt_url": "",
-  "tun_info": [
-    {"name": "", "network_id": ""}
+  "info": [
+    {
+      "network_id": "L9wJy",
+      "mqtt_url": "mqtt://mqtt-dev.fornetcode.com:1883",
+      "node_id": "jyvLq"
+    }
   ]
 }
 ```
 
-> `server` is the grpc server which to provide auth API.
+> `server` is the grpc server which provide auth API.
 >
-> `device_id` the device ID which is a short ID of public key.
-> 
-> `tun_info` the tun name of network which device joined.
+> `node_id` the device ID for the machine.
 
-The config files is managed by fornet client, You should not change it.
+The config files is managed by fornet client, You should not change it manually.

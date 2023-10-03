@@ -1,5 +1,5 @@
 # Documentation Website
-This website is built using [Vitepress](https://github.com/vuejs/vitepress).
+This website is built using [Vitepress](https://github.com/vuejs/vitepress) for [ForNet](https://github.com/fornetcode/fornet) documentation, you can jump to [this](https://doc.fornetcode.com) to view.
 
 ## Prerequistes
 [Node.js](https://nodejs.org/en/download), recommend to use [nvm](https://github.com/nvm-sh/nvm) to manager Node.js.

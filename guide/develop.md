@@ -4,7 +4,7 @@ Download source code using Git:
 git clone --recursive {{$sourceUrl}}
 ```
 
-**由于开发时需要解决 前后端开发分离 问题**，需要使用 <a :href="`${$sourceUrl}/command/docker/proxy`">Nginx 镜像</a> 来做 Backend、Web、Keycloak 流量统一转发。
+**由于开发时需要解决 前后端开发分离 问题**，需要使用 <a :href="`${$sourceUrl}/tree/main/command/docker/proxy`">Nginx 镜像</a> 来做 Backend、Web、Keycloak 流量统一转发。
 ## Backend
 后台使用 Scala3 编写，包含 Servlet Web Server(Jetty) 和 gRPC Server。 
 ### 环境准备
@@ -22,9 +22,9 @@ PostgreSQL 可用 docker 跑。
 ```shell
 # 需要自行设置持久化目录和数据库代码
 # Mac/Windows
-docker run -d  --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=tnet_db -v ${local_machine/pg/path}:/var/lib/postgresql/data postgres:14
+docker run -d  --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=tnet_db -v ${local_machine/pg/path}:/var/lib/postgresql/data postgres:15
 # Linux
-docker run -d  --name postgres --network=host -e POSTGRES_PASSWORD=tnet_db -v ${local_machine/pg/path}:/var/lib/postgresql/data postgres:14
+docker run -d  --name postgres --network=host -e POSTGRES_PASSWORD=tnet_db -v ${local_machine/pg/path}:/var/lib/postgresql/data postgres:15
 # --psql: create database tnet_db 创建 database 
 docker exec -it postgres sh
 psql -u postgres
@@ -82,7 +82,7 @@ npm run build:prod
 cd client
 cargo build --release
 ```
-## Mobile App
+## Mobile App (in developing)
 App端使用 [Flutter](https://flutter.dev/) 来做跨平台 UI层面的开发。业务逻辑和通信层用 Rust 来实现，使用 [flutter_rust_bridge](https://github.com/fzyzcjy/flutter_rust_bridge) 衔接两方语言。
 
 ### 环境准备

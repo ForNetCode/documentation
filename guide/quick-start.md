@@ -5,13 +5,12 @@
 ### Prerequisites
 ForNet is a client-server model program, you need to deploy server firstly,
 and ForNet now needs relay node to let devices connect each other. You need have a linux server to deploy the relay instance.
-We are in hard work to build SASS backend server and implement p2p connection feature. You would only need to install client then.
+We are in hard work to build SaaS backend server and implement p2p connection feature. You would only need to install client then.
 
 If you like to build ForNet from the source code, please refer [Develop Guide](./develop) for more information.
 
 ### Client
-you can download client binary app at Github <a :href="`${$sourceUrl}/releases`">release page</a>, it now supports macOS and Linux.
-Windows is blocked for tun driver code signature.
+you can download client binary app at Github <a :href="`${$sourceUrl}/releases`">release page</a>, it now supports macOS、Linux and Windows 11.
 
 ### Server
 The manager server is written by Scala, you can deploy the jar or docker image. It uses Postgres to store data. and uses [rmqtt](https://github.com/rmqtt/rmqtt) to interact with client.
@@ -23,7 +22,7 @@ There is <a :href="`${$sourceUrl}/command/docker-compose/simple/docker-compose.y
 cd /command/docker-compose/simple
 docker-compose up
 ```
-If you 
+If you would like to deploy with docker step by step, you can follow this:
 #### Postgres
 ```shell
 # If platform is Mac/Windows, change --network=host to -p 5432:5432
@@ -31,7 +30,7 @@ docker run -d  --name postgres --network=host \
 -e POSTGRES_PASSWORD=tnet_db_password \
 -e POSTGRES_DB=tnet_db \
 -e POSTGRES_USER=postgres \
--v ${local_machine/pg/path}:/var/lib/postgresql/data\
+-v ${local_machine/pg/path}:/var/lib/postgresql/data \
 postgres:14
 
 ```
@@ -44,10 +43,10 @@ More details about RMQTT can be found [here](https://github.com/rmqtt/rmqtt).
 cd /command/docker/mqtt
 # RMQTT will use port:
 # 1883(mqtt) 6060(http api) 5363(grpc)
-docker run -d --name mqtt --network=host\
- -v $(pwd)/log:/var/log/rmqtt\
- -v $(pwd)/config/rmqtt.toml:/app/rmqtt/rmqtt.toml\
- -v $(pwd)/config/plugin:/app/rmqtt/plugin\
+docker run -d --name mqtt --network=host \
+ -v $(pwd)/log:/var/log/rmqtt \
+ -v $(pwd)/config/rmqtt.toml:/app/rmqtt/rmqtt.toml \
+ -v $(pwd)/config/plugin:/app/rmqtt/plugin \
  rmqtt/rmqtt:latest
 ```
 
@@ -82,11 +81,11 @@ fornet-cli join xxx
 You can also use docker in Linux(docker image does not support macOS).
 ```shell
 # export config to host, otherwise private.key will miss if image delete
-docker run -it --name=fornet\
---cap-add=NET_ADMIN\
---network=host\
---device=/dev/net/tun\
--v ${config_path}:/config\
+docker run -it --name=fornet \
+--cap-add=NET_ADMIN \
+--network=host \
+--device=/dev/net/tun \
+-v ${config_path}:/config \
 fornet:latest
 # join  network
 docker exec -it fornet fornet-cli join xxx

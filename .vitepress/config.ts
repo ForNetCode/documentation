@@ -8,7 +8,7 @@ export default defineConfig({
     description: '基于 WireGuard 协议组网快捷方案',
     // base:'/documentation/',
     lastUpdated: true,
-    cleanUrls: true,
+    cleanUrls: true,    
     head: [
         ['meta', { name: 'theme-color', content: '#3c8772' }],
 
@@ -21,7 +21,11 @@ export default defineConfig({
         footer: {
             message: 'Documentation released under CC 4.0 License',
             copyright: 'Copyright © 2023-present Timzaak'
-        }
+        },
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/fornetcode/fornet' }
+        ],
+
     },
 })
 
@@ -57,10 +61,10 @@ function sidebarGuide() {
                 text: 'Quick Start',
                 link: '/guide/quick-start',
             }, {
-                text: 'admin manager tutorial',
+                text: 'Admin Web Tutorial',
                 link: '/guide/admin_web_tutorial'
             }, {
-                text: 'Keycloak',
+                text: 'Keycloak Integration',
                 link: '/guide/keycloak',
             }],
         },

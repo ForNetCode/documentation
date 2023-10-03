@@ -28,4 +28,4 @@ The keycloak client config would be:
 Enable Device Authorization Grant for the command line client.
 :::
 
-ForNet admin web also support register device with unique code, This is for the situation where client does not have browser to login in keycloak.
+ForNet admin web also support the registeration with unique code, This is for the situation where client does not have browser to login in keycloak.
