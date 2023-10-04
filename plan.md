@@ -3,9 +3,10 @@
 
 ## Doing Feature
 - [ ] Android App
+- [ ] admin web tutorial
 
 ## Plan Feature(No Order)
-- [ ] admin web tutorial
+- [ ] Win10 support
 - [ ] punch hole(p2p)
 - [ ] error info report to server
 - [ ] iOS App

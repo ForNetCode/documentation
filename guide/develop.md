@@ -109,13 +109,13 @@ flutter_rust_bridge_codegen --rust-input ../client/lib/src/flutter_api.rs --dart
 ## Release Version Check
 ## ChangeVersion
 - backend(build.sbt)
-- client(cargo.toml, cargo-lock.toml)
+- client bin/lib(cargo.toml), should run `cargo build` to change cargo-lock.toml
 - admin-web(package.json)
 ## Distribution
 Run Github Action:
 - Client binary, docker image
-- Backend jar, docker image
+- backend jar, docker image
 
 ## Documentation
 - change log
-- Github Action(release to GitPage)
+- version change

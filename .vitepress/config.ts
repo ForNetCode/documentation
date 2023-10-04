@@ -60,10 +60,12 @@ function sidebarGuide() {
             }, {
                 text: 'Quick Start',
                 link: '/guide/quick-start',
-            }, {
+            }, 
+            /*{
                 text: 'Admin Web Tutorial',
                 link: '/guide/admin_web_tutorial'
-            }, {
+            },*/ 
+            {
                 text: 'Keycloak Integration',
                 link: '/guide/keycloak',
             }],
