@@ -10,7 +10,7 @@ We are in hard work to build SaaS backend server and implement p2p connection fe
 If you like to build ForNet from the source code, please refer [Develop Guide](./develop) for more information.
 
 ### Client
-you can download client binary app at Github <a :href="`${$sourceUrl}/releases`">release page</a>, it now supports macOS、Linux and Windows 11.
+you can download client binary app at Github <a :href="`${$sourceUrl}/releases`">release page</a>, it now supports macOS、Linux and Windows 11. **Client needs root/administrator permission to run**, unix is to create tun, Windows is to install driver.
 
 ### Server
 The manager server is written by Scala, you can deploy the jar or docker image. It uses Postgres to store data. and uses [rmqtt](https://github.com/rmqtt/rmqtt) to interact with client.
@@ -54,11 +54,11 @@ There is two config file: `application.conf` and `logback.xml`, you can get the 
 More details about config can be found [here](config.md).
 
 ```shell
-# run server with database init
-docker run -it -d\
--p 8080:8080 -p 9000:9000\
--v ${local_machine/applcation.conf+logback.xml/path}:/config\
---name=fornet-backend\
+# run server with database init, 8080 is for http api, 9000 is for grpc.
+docker run -it -d \
+-p 8080:8080 -p 9000:9000 \
+-v ${local_machine/applcation.conf+logback.xml/path}:/config \
+--name=fornet-backend \
 fornetcode/fornet-backend:latest
 
 ```
@@ -75,7 +75,7 @@ There's `fornet` and `fornet-cli`, `fornet` is the background service, `fornet-c
 # run fornet in background 
 sudo fornet &
 # you could get the invite cod from the admin web.
-fornet-cli join xxx
+sudo fornet-cli join xxx
 ```
 You can also use docker in Linux(docker image does not support macOS).
 ```shell
@@ -129,7 +129,7 @@ systemctl start fornet
 
 #### macOS
 ```shell
-fornet-cli launch enable
+sudo fornet-cli launch enable
 ```
 ## What's More
 If you are interested with this project, you can go [roadmap](../plan) to get more information.
