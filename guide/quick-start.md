@@ -13,7 +13,7 @@ If you like to build ForNet from the source code, please refer [Develop Guide](.
 you can download client binary app at Github <a :href="`${$sourceUrl}/releases`">release page</a>, it now supports macOS、Linux and Windows 11. **Client needs root/administrator permission to run**, unix is to create tun, Windows is to install driver.
 
 ### Server
-The manager server is written by Scala, you can deploy the jar or docker image. It uses Postgres to store data. and uses [rmqtt](https://github.com/rmqtt/rmqtt) to interact with client.
+The manager server is written by Scala 3, you can deploy the jar or docker image. It uses Postgres to store data. and uses [rmqtt](https://github.com/rmqtt/rmqtt) to interact with client.
 
 There is <a :href="`${$sourceUrl}/tree/main/command/docker-compose/simple/docker-compose.yml`">docker-compose.yml</a> for quick start, you can ship it with:
 ```shell
@@ -66,7 +66,7 @@ fornetcode/fornet-backend:latest
 ## Up and Running
 
 ### Create Network
-After the backend server up, visit the backend website: http://127.0.0.1:8080, If you use simple auth, just type the config value `auth.simple.token` to login in.
+After the backend server up, visit the backend website: http://127.0.0.1:8080, If you use simple auth, just type the config value of `auth.simple.token` to login in.
 Then you could create network, and get invite code to let client node join in.
 
 ### Client Join Network 
@@ -75,9 +75,9 @@ There's `fornet` and `fornet-cli`, `fornet` is the background service, `fornet-c
 # run fornet in background 
 sudo fornet &
 # you could get the invite cod from the admin web.
-sudo fornet-cli join xxx
+sudo fornet-cli join ${invite code}
 ```
-You can also use docker in Linux(docker image does not support macOS).
+You can also use docker in Linux(thisdoes not support macOS, indows).
 ```shell
 # export config to host, otherwise private.key will miss if image delete
 docker run -it --name=fornet \
@@ -87,7 +87,7 @@ docker run -it --name=fornet \
 -v ${config_path}:/config \
 fornet:latest
 # join  network
-docker exec -it fornet fornet-cli join xxx
+docker exec -it fornet fornet-cli join ${invite code}
 ```
 
 ### Auto Launch
