@@ -169,6 +169,6 @@ There are there files in the config directory.
 
 > `server` is the grpc server which provide auth API.
 >
-> `node_id` the device ID for the machine.
+> `node_id` the device ID for the machine at mqtt server.
 
 The config files is managed by fornet client, You should not change it manually.
