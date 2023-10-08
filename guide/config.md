@@ -142,7 +142,7 @@ Client would store config files at different directory for differnet OS. The def
 |:---:|:---------------:|
 |macOS| ~/.fornet|
 |Linux|/etc/fornet|
-|Windows||
+|Windows|C:/users/$User/.fornet|
 
 You can replace the default path by setting environment variable `FORNET_CONFIG` or run with `fornet --config=$CUSTOMISE_PATH`.
 
