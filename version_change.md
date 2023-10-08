@@ -1,4 +1,10 @@
 ## Changelog
+### V0.1.1
+This is a fixed bug version, we have tested it in production environment of SAAS, and every thing is ok.
+- [x] fix: client mqtt reconnect failed
+- [x] feat: aarch64 client support with Github Actions, make the distribution zip file more clean
+- [X] feat: windows auto launch support
+- [x] feat: add SAAS production config and bash
 
 ### V0.1.0
 **This is not compatible with V0.0.4.**
