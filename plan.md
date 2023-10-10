@@ -6,7 +6,7 @@
 
 ## Plan Feature(No Order)
 - [ ] Windows auto launch
-- [ ] admin web turn to white theme
+- [ ] admin web change to white theme
 - [ ] admin web tutoril(blocked by white theme)
 - [ ] Win10 support
 - [ ] punch hole(p2p)
@@ -30,4 +30,4 @@
 - [ ] Linux desktop
 
 ## Thinking Feature
-replace wireguard to webrtc, then P2P is more easy to be done.
+replace wireguard to WebRTC, then P2P is more easy to be done. it may be possible to use the cloud service of WebRTC to enhance p2p possiblity and stable connection.
