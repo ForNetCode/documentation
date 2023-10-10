@@ -9,5 +9,5 @@
 解决： Scala 项目必须重跑 `sbt compile` 指令才会更新 proto 文件变动。
 
 ## Backend
-问题： 服务器端IP 生成存在效率+重复的问题
+问题： 服务器端IP 生成存在效率 + 重复的问题
 解决： TODO
