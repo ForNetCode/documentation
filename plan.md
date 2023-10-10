@@ -3,9 +3,11 @@
 
 ## Doing Feature
 - [ ] Android App
-- [ ] admin web tutorial
 
 ## Plan Feature(No Order)
+- [ ] Windows auto launch
+- [ ] admin web turn to white theme
+- [ ] admin web tutoril(blocked by white theme)
 - [ ] Win10 support
 - [ ] punch hole(p2p)
 - [ ] error info report to server
