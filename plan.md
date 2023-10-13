@@ -1,33 +1,29 @@
 # Roadmap
 
+If you have any idea, feel free to open <a :href="$sourceUrl + '/issues/new'">example config of RMQTT </a>
+## Firstly To Do
+* WebRTC punch hole(p2p) and relay (0.2 Version)
 
-## Doing Feature
-- [ ] Android App
+## Secondly To Do
+* Desktop App (0.2 or 0.3 Vesrion)
+* error info report to server
+* Windows auto launch
+* DNS(DNS Resolver)
+* usage statistic（server）
 
-## Plan Feature(No Order)
-- [ ] Windows auto launch
-- [ ] admin web change to white theme
-- [ ] admin web tutoril(blocked by white theme)
-- [ ] Win10 support
-- [ ] punch hole(p2p)
-- [ ] error info report to server
-- [ ] iOS App
-- [ ] DNS(DNS Resolver)
-- [ ] WireGuard Relay support
-- [ ] mDNS support for Lan
-- [ ] usage statistic（server）
-- [ ] Ingress、Outgress
-- [ ] Ingress LoadBalance
-- [ ] k8s deploy
-- [ ] OpenBSD/FreeBSD support
-- [ ] Windows arm64 support
-- [ ] Windows Tun Driver performance improve（all in driver, only provide api to userspace）
-- [ ] run without manager sc-manager, read config from local file
 
-## Blocked Feature
-- [x] MacOS desktop(release when user really need it)
-- [x] Windows desktop(release when user really need it)
-- [ ] Linux desktop
+## Easy To Do
+* user online status show at admin web
+* admin web change to white theme
+* admin web tutoril (0.1.x Version)
 
-## Thinking Feature
-replace wireguard to WebRTC, then P2P is more easy to be done. it may be possible to use the cloud service of WebRTC to enhance p2p possiblity and stable connection.
+## Blocked, Waiting For User Feedback
+* Android App
+* Win10 support
+* iOS App
+* OpenBSD/FreeBSD support
+* Windows arm64 support
+
+
+## Just remark
+* Windows Tun Driver performance improve（all in driver, only provide api to userspace）

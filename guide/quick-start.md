@@ -50,7 +50,7 @@ docker run -d --name mqtt --network=host \
 ```
 
 #### Deploy Server Docker
-There is two config file: `application.conf` and `logback.xml`, you can get the example <a :href="$sourceUrl + 'tree/main/command/docker/backend/config'">here</a>.
+There is two config file: `application.conf` and `logback.xml`, you can get the example <a :href="$sourceUrl + '/tree/main/command/docker/backend/config'">here</a>.
 More details about config can be found [here](config.md).
 
 ```shell
