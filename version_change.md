@@ -1,4 +1,9 @@
 ## Changelog
+
+### V0.2.0
+- [x] support WebRTC protocol and turn relay(add doc)
+
+
 ### V0.1.1
 This is a fixed bug version, we have tested it in production environment of SAAS, and every thing is ok.
 - [x] fix: multifarious bugs

@@ -2,7 +2,6 @@
 
 If you have any idea, feel free to open <a :href="$sourceUrl + '/issues/new'">issue</a>.
 ## Firstly To Do
-* WebRTC punch hole(p2p) and relay (0.2 Version)
 
 ## Secondly To Do
 * Desktop App (0.2 or 0.3 Vesrion)
