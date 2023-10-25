@@ -15,7 +15,7 @@ If you have any idea, feel free to open <a :href="$sourceUrl + '/issues/new'">is
 ## Easy To Do
 * user online status show at admin web
 * admin web change to white theme
-* admin web tutoril (0.1.x Version)
+* admin web tutorial (0.1.x Version)
 
 ## Blocked, Waiting For User Feedback
 * Android App
