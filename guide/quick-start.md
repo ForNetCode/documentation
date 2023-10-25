@@ -12,6 +12,7 @@ If you like to build ForNet from the source code, please refer [Develop Guide](.
 ### Client
 you can download client binary app at Github <a :href="`${$sourceUrl}/releases`">release page</a>, it now supports macOS、Linux and Windows 11. **Client needs root/administrator permission to run**, unix is to create tun, Windows is to install driver.
 
+
 ### Server
 The manager server is written by Scala 3, you can deploy the jar or docker image. It uses Postgres to store data. and uses [rmqtt](https://github.com/rmqtt/rmqtt) to interact with client.
 
