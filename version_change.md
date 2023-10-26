@@ -1,5 +1,15 @@
 ## Changelog
 
+### V0.2.0
+- [x] support WebRTC protocol and turn relay(add doc)
+
+
+### V0.1.1
+This is a fixed bug version, we have tested it in production environment of SAAS, and every thing is ok.
+- [x] fix: multifarious bugs
+- [x] feat: aarch64 client support with Github Actions, make the distribution zip file more clean
+- [x] feat: add SAAS production config and bash
+
 ### V0.1.0
 **This is not compatible with V0.0.4.**
 
