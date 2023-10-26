@@ -5,12 +5,12 @@ If you have any idea, feel free to open <a :href="$sourceUrl + '/issues/new'">is
 * WebRTC punch hole(p2p) and relay (0.2 Version)
 
 ## Secondly To Do
-* Desktop App (0.2 or 0.3 Vesrion)
+* Desktop App
 * error info report to server
 * Windows auto launch
 * DNS(DNS Resolver)
 * usage statistic（server）
-
+* client connect each other without server
 
 ## Easy To Do
 * user online status show at admin web
