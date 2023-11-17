@@ -60,7 +60,10 @@ function sidebarGuide() {
             }, {
                 text: 'Quick Start',
                 link: '/guide/quick-start',
-            }, 
+            }, {
+                text: 'Self Deployment',
+                link: '/guide/self-deploy'
+            },
             /*{
                 text: 'Admin Web Tutorial',
                 link: '/guide/admin_web_tutorial'
