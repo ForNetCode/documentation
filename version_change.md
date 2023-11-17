@@ -3,7 +3,7 @@
 This is a fixed bug version, we have tested it in production environment of SAAS, and every thing is ok.
 - [x] fix: multifarious bugs
 - [x] feat: aarch64 client support with Github Actions, make the distribution zip file more clean
-- [x] feat: add SAAS production config and bash
+- [x] feat: add SAAS production config and scripts
 
 ### V0.1.0
 **This is not compatible with V0.0.4.**

@@ -29,7 +29,7 @@ docker run -d  --name postgres --network=host \
 -e POSTGRES_PASSWORD=tnet_db_password \
 -e POSTGRES_DB=tnet_db \
 -e POSTGRES_USER=postgres \
--v ${local_machine/pg/path}:/var/lib/postgresql/data \
+-v $(pwd):/var/lib/postgresql/data \
 postgres:15
 ```
 

@@ -9,9 +9,6 @@ P2P is under development, you should deploy relay server on Linux OS.
 you can download client binary app at Github <a :href="`${$sourceUrl}/releases`">release page</a>, it now supports macOS、Linux and Windows 11. **Client needs root/administrator permission to run**, unix is to create tun, Windows is to install driver.
 
 
-## fornet server
-you can register and login at [ForNet Keycloak SSO](https://sso.fornetcode.com). create network and get node invite token.
-
 ### Client Join Network 
 There's `fornet` and `fornet-cli`, `fornet` is the background service, `fornet-cli` is used to interact with `fornet`.
 ```shell
